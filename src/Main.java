@@ -8,12 +8,13 @@ public class Main {
         for(int i = 0; i < n.length; i++) {
             for (int j = 0; j < n.length; j++) {
                 if (n[i] + n[j] == t) {
-                    indecies[0] = i;
-                    indecies[1] = j;
+                    indecies[0] = j;
+                    indecies[1] = i;
                 }
             }
         }
-        return "";
+        String str = "[" + indecies[0] + "," + indecies[1] + "]";
+        return str;
     }
     public static boolean Problem2(int x){
         String y = String.valueOf(x);
